@@ -1,0 +1,75 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>即时聊天工具</title>
+	<link rel="stylesheet" type="text/css" href="css/add.css">
+</head>
+<body>
+
+	<div class="container">
+		<!-- fdfdfd -->
+		<div class="left-part">
+			<div class="total-person">
+				<p>当前聊天室用户</p>
+				<p id="usercount">**人</p>
+			</div>
+			<div class="userlist">
+				<ul id="userlist">
+					<!-- <li>lalal</li>
+					<li>lalal2</li> -->
+				</ul>
+			</div>
+		</div>
+		<div class="right-part">
+			<div class="logo">
+				syean聊天室
+			</div>
+			<div class="chat-box">
+				<div id="dialog">
+					<ul id="dialog-list">
+					</ul>
+				</div>
+				<div class="user-input">
+					<!-- <div class="tool">
+						<button>lalal</button>
+						<button>lalla2</button>
+						<button>lalalla</button>
+					</div> -->
+					<div class="content">
+						<!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
+						<textarea name="conversation" id="chat-content" rows="8"></textarea>	
+					</div>
+					<div class="send">
+						<button class="send-btn" id="sendBtn">发送</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- <img src="img/logo.png" height="200" width="200"> -->
+	</div>
+	<div id="layer">
+		<div class="layer-content">
+			<p id="info">正在连接服务器，请稍等...</p>
+			<div id="username-form">
+				<input type="text" id="input-name" name="username">
+				<button id="submit-username">确定</button>
+			</div>
+			
+		</div>
+		
+	</div>
+
+<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/chat.js"></script>
+<script>
+	// var socket=io.connect();
+	// var button=document.getElementById("sendBtn");
+	// button.onclick=function() {
+	// 	socket.emit('foo','hello');
+		
+	// }
+</script>
+</body>
+</html>
